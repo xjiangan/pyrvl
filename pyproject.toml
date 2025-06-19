@@ -5,18 +5,21 @@ build-backend = "scikit_build_core.build"
 [project]
 name = "pyrvl"
 version = "0.0.1"
-description = "An example minimal project that compiles bindings using nanobind and scikit-build"
+description = "Python Binding for RVL depth compression"
 readme = "README.md"
 requires-python = ">=3.8"
 authors = [
-    { name = "Wenzel Jakob", email = "wenzel.jakob@epfl.ch" },
+    { name = "Andrew D. Wilson", email = "awilson@microsoft.com" },
+]
+maintainers = [
+  {name = "Xudong Jiang", email = "xudong.jiang@inf.ethz.ch"}
 ]
 classifiers = [
-    "License :: OSI Approved :: BSD License",
+    "License :: OSI Approved :: MIT License",
 ]
 
 [project.urls]
-Homepage = "https://github.com/wjakob/pyrvl"
+Homepage = "https://github.com/xjiangan/pyrvl"
 
 
 [tool.scikit-build]
