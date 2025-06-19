@@ -184,8 +184,8 @@ NB_MODULE(pyrvl, m)
         RvlCodec rvl;
         const unsigned char * inputData = reinterpret_cast<const unsigned char *>(input.data());
         uint16_t * shape = (uint16_t *)inputData;
-        int h = shape[0];
-        int w = shape[1];
+        uint16_t h = shape[0];
+        uint16_t w = shape[1];
         int numPixels = h * w;
         inputData += 4;
         uint16_t * output = new uint16_t[numPixels];
