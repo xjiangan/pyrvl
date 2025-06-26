@@ -40,7 +40,8 @@ build-verbosity = 1
 test-command = "pytest {project}/tests"
 test-requires = "pytest numpy"
 
-build = "cp3*manylinux_x86_64"
+# Skip pypy because of limited support https://nanobind.readthedocs.io/en/latest/pypy.html
+skip = "pp*"
 
 # Don't test Python 3.8 wheels on macOS/arm64
 test-skip="cp38-macosx_*:arm64"
